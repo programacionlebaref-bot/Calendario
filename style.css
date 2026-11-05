@@ -21,7 +21,6 @@ body {
     background-image:
         linear-gradient(rgba(0,0,0,0.045) 1px, transparent 1px),
         linear-gradient(90deg, rgba(0,0,0,0.045) 1px, transparent 1px);
-
     background-size: 35px 35px;
 }
 
@@ -75,7 +74,6 @@ body {
     max-width: 430px;
     border-left: 1px solid #1B9CFC;
     padding: 8px 0 8px 22px;
-
     color: #000000;
     font-size: 15px;
     line-height: 2;
@@ -86,10 +84,8 @@ body {
 .booking-container {
     max-width: 1350px;
     margin: auto;
-
     display: grid;
     grid-template-columns: 278px 1fr;
-
     background-color: #FFFFFF;
     border: 1px solid #CED4DA;
 }
@@ -100,9 +96,7 @@ body {
 .sidebar {
     background-color: #1A2E4A;
     color: white;
-
     padding: 38px 34px;
-
     display: flex;
     flex-direction: column;
     min-height: 600px;
@@ -112,12 +106,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     color: #1B9CFC;
     font-size: 9px;
     font-weight: bold;
     letter-spacing: 2px;
-
     margin-bottom: 65px;
 }
 
@@ -131,7 +123,6 @@ body {
     color: #1B9CFC;
     font-weight: bold;
     letter-spacing: 2px;
-
     margin-bottom: 15px;
 }
 
@@ -140,7 +131,6 @@ body {
     line-height: 1.05;
     font-weight: 800;
     letter-spacing: -1px;
-
     margin-bottom: 40px;
 }
 
@@ -150,7 +140,6 @@ body {
     display: flex;
     align-items: center;
     gap: 16px;
-
     margin-bottom: 25px;
     opacity: 0.35;
 }
@@ -162,14 +151,11 @@ body {
 .step-icon {
     width: 43px;
     height: 43px;
-
     border: 1px solid #1B9CFC;
     color: #1B9CFC;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-size: 17px;
 }
 
@@ -261,22 +247,18 @@ body {
     font-size: 10px;
     font-weight: bold;
     letter-spacing: 2px;
-
     margin-bottom: 15px;
 }
 
 .form-content h2 {
     max-width: 650px;
-
     font-size: clamp(25px, 3vw, 38px);
     font-weight: 900;
     line-height: 1.1;
     letter-spacing: -1.5px;
-
     margin-bottom: 18px;
 }
 
-/* LABELS COMO TU DISEÑO */
 .form-label {
   font-size: 11px;
   font-weight: 700;
@@ -321,8 +303,6 @@ body {
   padding: 12px 18px;
   white-space: nowrap;
 }
-
-/* VISTA PREVIA */
 .preview-foto {
   margin-top: 12px;
   display: flex;
@@ -357,7 +337,6 @@ body {
 }
 
 /* ETIQUETAS */
-
 .form-content label {
     display: flex;
     justify-content: space-between;
@@ -372,24 +351,16 @@ body {
 .form-content label span {
     color: #1B9CFC;
 }
-
-
 /* INPUTS Y SELECT */
-
 .form-control,
 .form-select {
     min-height: 55px;
-
     border: 1px solid #ADB5BD;
     border-radius: 0;
-
     background-color: #fffdfa;
-
     font-size: 14px;
     color: #6E8298;
-
     padding: 14px 16px;
-
     box-shadow: none !important;
 }
 
@@ -403,23 +374,16 @@ body {
     background-color: #EAF1F8;
 }
 
-
-
-
 textarea.form-control {
     min-height: 125px;
     resize: vertical;
 }
 
-
 /* PIE DEL FORMULARIO */
-
 .form-footer {
     border-top: 1px solid #1B9CFC;
-
     margin-top: 38px;
     padding-top: 25px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -438,19 +402,15 @@ textarea.form-control {
 .calendar-button {
     background-color: #19191b;
     color: white;
-
     border: none;
     padding: 20px 27px;
-
     font-size: 10px;
     font-weight: bold;
     letter-spacing: 2px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-
     cursor: pointer;
     transition: 0.3s;
 }
@@ -544,5 +504,4 @@ textarea.form-control {
     .calendar-button {
         width: 100%;
     }
-
 }
