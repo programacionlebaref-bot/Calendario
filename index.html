@@ -84,11 +84,15 @@
                 </div>
                 <div class="sidebar-contact">
 
-                    <small>ASISTENCIA</small>
+              <!-- ASISTENCIA -->
+<a href="https://wa.me/5219901010387?text=Hola,%20quiero%20solicitar%20un%20presupuesto" target="_blank" class="whatsapp-contacto">
+  <span class="whatsapp-icono"><i class="bi bi-whatsapp"></i></span>
+  <span>CONTÁCTANOS</span></br>
+</a>
+</br>
+</br>
 
-                    <h6>990 101 0387</h6>
-
-                    <p>corporativo@lebaref.com</p>
+<p class="asistencia-correo">corporativo@lebaref.com</p>
 
                 </div>
 
@@ -202,8 +206,7 @@
                             </select>
 
                         </div>
-
-
+                        
                         <div class="col-12">
 
                             <label for="descripcion">
@@ -220,6 +223,33 @@
                             ></textarea>
 
                         </div>
+                     <!-- AGREGA UNA IMAGEN DEL PROBLEMA -->
+<div class="col-12 mt-4">
+  <div class="d-flex justify-content-between align-items-center">
+    <label class="form-label">AGREGA UNA IMAGEN DEL PROBLEMA</label>
+  </div>
+
+  <label for="foto-evidencia" class="upload-box">
+    <div class="upload-icon">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1A2E4A" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+    </div>
+    <div class="upload-text">
+      <strong>Arrastra tu imagen aquí o haz clic para subirla</strong>
+    </div>
+    <span class="upload-btn">Seleccionar imagen</span>
+  </label>
+
+  <input type="file" id="foto-evidencia" name="foto" accept="image/*" hidden>
+
+  <!-- Vista previa -->
+  <div id="preview-foto" class="preview-foto" hidden>
+    <img id="img-preview" src="" alt="Vista previa">
+    <div class="preview-info">
+      <span id="nombre-foto"></span>
+      <button type="button" id="quitar-foto">Quitar ✕</button>
+    </div>
+  </div>
+</div>
 
                     </div>
 
@@ -246,6 +276,6 @@
 
     </div>
 
-
+<script src="script.js"></script>
 </body>
 </html>
