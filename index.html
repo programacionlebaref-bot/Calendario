@@ -25,7 +25,7 @@
                     FECHA A LA<br>
                     <span>SOLUCIÓN.</span>
                 </h1>
-
+ 
                 <div class="header-description">
                     Completa la información y elige una fecha disponible.
                     La cita se te agendara y te llegara un aviso.
@@ -166,12 +166,12 @@
                                 <option value="" selected disabled>
                                     Selecciona el tipo de servicio
                                 </option>
-                                <option>Mantenimiento preventivo</option>
-                                <option>Mantenimiento correctivo</option>
-                                <option>Instalación de equipos</option>
-                                <option>Reparación de maquinaria</option>
-                                <option>Diagnóstico técnico</option>
-                                <option>Otro servicio</option>
+                                <option>Aire acondicionado HVAC</option>
+                                <option>Electricidad baja y media tensión</option>
+                                <option>Instalaciones hidrosanitarias</option>
+                                <option>Tecnología de la información (TI)</option>
+                                <option>Ingeniería y obra civil</option>
+                                <option>Remodelación y mantenimiento</option>
                             </select>
 
                         </div>
@@ -226,15 +226,36 @@
                         <p>
                             Tus datos se almacenan de forma segura.
                         </p>
-                        <button type="button" class="calendar-button">
-                            ABRIR CALENDARIO
-                            <i class="bi bi-arrow-right"></i>
-                        </button>
+                      <button type="button" class="calendar-button" id="openCalendar">
+                       ABRIR CALENDARIO
+                      <i class="bi bi-arrow-right"></i>
+                      </button>
                     </div>
-                </form>
+         </form>
+
             </section>
+            <!-- FIN DEL FORMULARIO -->
+
+            <!-- CALENDARIO: FUERA DE form-content -->
+            <section id="calendarContent" class="calendar-content" hidden>
+
+                <button type="button" id="backToForm" class="back-to-form">
+                    <i class="bi bi-arrow-left"></i>
+                    VOLVER AL FORMULARIO
+                </button>
+
+                <iframe
+                    id="calendarFrame"
+                    src="calendario.html"
+                    title="Calendario de citas">
+                </iframe>
+
+            </section>
+            <!-- FIN DEL CALENDARIO -->
+
         </main>
     </div>
-<script src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
