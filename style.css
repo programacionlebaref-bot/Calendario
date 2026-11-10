@@ -630,3 +630,270 @@ textarea.form-control {
         justify-content: center;
     }
 }
+/* --- ARREGLO PARA CELULAR --- */
+@media (max-width: 650px) {
+    * {
+    box-sizing: border-box;
+  }
+
+  .main-container {
+    padding: 20px 15px !important;
+    width: 100%;
+  }
+
+  /* Que todo lo que sea input y textarea ocupe el 100% */
+  textarea, input, select {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* ESTE ES EL QUE ESTÁ ROTO EN TU FOTO */
+  /* El contenedor de subir imagen */
+  .upload-box, 
+  .dropzone, 
+  .upload-area {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 12px;
+    padding: 20px 15px !important;
+  }
+
+  /* El texto de "Arrastra tu imagen..." */
+  .upload-box p,
+  .dropzone p,
+  .upload-area p {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  /* El botón de SELECCIONAR IMAGEN */
+  .upload-box button,
+  .dropzone button,
+  .upload-area button {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 12px !important;
+    white-space: normal;
+  }
+
+  /* El botón negro de ABRIR CALENDARIO */
+  .btn-calendario, 
+  .btn-black {
+    width: 100% !important;
+  }
+}
+.sidebar-imagen {
+  width: 100%;
+  margin: 18px 0 20px 0; /* espacio arriba y abajo */
+}
+
+.sidebar-imagen img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: white; /* si el logo es azul y tu fondo es azul oscuro */
+  padding: 12px;
+  border-radius: 8px;
+}
+/* TRANSICIÓN ENTRE FORMULARIO Y CALENDARIO */
+
+[hidden] {
+    display: none !important;
+}
+
+.calendar-content {
+    min-width: 0;
+    width: 100%;
+    padding: 25px;
+    background: #ffffff;
+}
+
+.calendar-content iframe {
+    display: block;
+    width: 100%;
+    min-height: 850px;
+    border: none;
+}
+
+.back-to-form {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 13px 20px;
+    background: #1A2E4A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.back-to-form:hover {
+    background: #0E7CD8;
+}
+
+@media (max-width: 650px) {
+    .calendar-content {
+        padding: 15px;
+    }
+
+    .calendar-content iframe {
+        min-height: 1150px;
+    }
+
+    .back-to-form {
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* ======================================
+   INTEGRACIÓN DEL CALENDARIO
+====================================== */
+
+[hidden] {
+    display: none !important;
+}
+
+/* El formulario y el calendario ocupan el mismo espacio */
+.form-content,
+.calendar-content {
+    grid-column: 2;
+    grid-row: 1;
+    min-width: 0;
+}
+
+.calendar-content {
+    width: 100%;
+    padding: 30px;
+    background: transparent; /* para que se vea el cristal del calendario */
+}
+.calendar-content iframe {
+    display: block;
+    width: 100%;
+    min-height: 920px;
+    border: none;
+    background: transparent;
+    border-radius: 28px;
+}
+
+/* Botón para regresar */
+.back-to-form {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding: 14px 22px;
+    background: #1A2E4A;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+.back-to-form:hover {
+    background: #0E7CD8;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 650px) {
+
+    .form-content,
+    .calendar-content {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .calendar-content {
+        padding: 15px;
+    }
+
+    .calendar-content iframe {
+        min-height: 1150px;
+    }
+
+    .back-to-form {
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* --- ARREGLO PARA CELULAR --- */
+@media (max-width: 650px) {
+    * {
+    box-sizing: border-box;
+  }
+
+  .main-container {
+    padding: 20px 15px !important;
+    width: 100%;
+  }
+
+  /* Que todo lo que sea input y textarea ocupe el 100% */
+  textarea, input, select {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* ESTE ES EL QUE ESTÁ ROTO EN TU FOTO */
+  /* El contenedor de subir imagen */
+  .upload-box, 
+  .dropzone, 
+  .upload-area {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center;
+    gap: 12px;
+    padding: 20px 15px !important;
+  }
+
+  /* El texto de "Arrastra tu imagen..." */
+  .upload-box p,
+  .dropzone p,
+  .upload-area p {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  /* El botón de SELECCIONAR IMAGEN */
+  .upload-box button,
+  .dropzone button,
+  .upload-area button {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 12px !important;
+    white-space: normal;
+  }
+
+  /* El botón negro de ABRIR CALENDARIO */
+  .btn-calendario, 
+  .btn-black {
+    width: 100% !important;
+  }
+}
+/* IMAGEN LEBAREF EN SIDEBAR */
+.sidebar-imagen {
+  width: 100%;
+  margin: 0 0 28px 0; /* espacio para que no se pegue al PROCESO DE AGENDA */
+}
+
+.sidebar-imagen img {
+  display: block;
+  width: 100%;
+  height: 120px; /* si la quieres un poquito más larga, ponle 140px o 160px */
+  object-fit: contain; /* para que no se corte ni se deforme el logo */
+  background: #FFFFFF;
+  padding: 14px 16px;
+  border-radius: 12px;
+}
